@@ -10,6 +10,7 @@ class LetterCombinationOfAPhoneNo {
     public List<String> letterCombinations(String digits) {
         //your code goes here
         List<String> ans = new ArrayList<>();
+        if (digits.length() == 0) return ans;
         func(0, ans, digits, "");
         return ans;
     }
